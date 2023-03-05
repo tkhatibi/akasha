@@ -2,7 +2,10 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "next-api-functions/*",
+    "react-components/*",
+    "react-hooks/*",
+    "utils/*"
   ],
   "devDependencies": {
     "lerna": "^6.5.1"
