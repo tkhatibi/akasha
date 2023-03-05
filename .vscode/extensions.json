@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "rvest.vs-code-prettier-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "nrwl.angular-console",
+    "firsttris.vscode-jest-runner",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "formulahendry.auto-complete-tag"
+  ]
+}
