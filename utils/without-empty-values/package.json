@@ -18,15 +18,13 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tkhatibi/akasha.git"
   },
   "scripts": {
     "build": "tsc",
+    "prepublish": "lerna run build",
     "test": "lerna run build && jest"
   },
   "bugs": {
