@@ -1,0 +1,35 @@
+{
+  "name": "@akasha/without-empty-values",
+  "version": "0.0.0",
+  "description": "Helper function to return undefined instead of null, empty string, empty array or object with empty values. It also emits undefined elements from an array and does all these things recursively.",
+  "keywords": [
+    "helper-function",
+    "utility"
+  ],
+  "author": "Touraj Khatibi <2rajpx@gmail.com>",
+  "homepage": "https://github.com/tkhatibi/akasha#readme",
+  "license": "ISC",
+  "main": "dist/without-empty-values.js",
+  "types": "dist/without-empty-values.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkhatibi/akasha.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "lerna run build && jest"
+  },
+  "bugs": {
+    "url": "https://github.com/tkhatibi/akasha/issues"
+  }
+}
