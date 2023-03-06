@@ -7,7 +7,7 @@
     "utility"
   ],
   "author": "Touraj Khatibi <2rajpx@gmail.com>",
-  "homepage": "https://github.com/tkhatibi/akasha#readme",
+  "homepage": "https://github.com/tkhatibi/akasha/tree/main/utils/without-empty-values",
   "license": "ISC",
   "main": "dist/without-empty-values.js",
   "types": "dist/without-empty-values.d.ts",

@@ -16,11 +16,17 @@ yarn add @akasha/without-empty-values
 import { withoutEmptyValues } from "@akasha/without-empty-values";
 
 console.log(withoutEmptyValues(undefined)); // undefined
+
 console.log(withoutEmptyValues(null)); // undefined
+
 console.log(withoutEmptyValues("")); // undefined
+
 console.log(withoutEmptyValues({})); // undefined
+
 console.log(withoutEmptyValues([])); // undefined
+
 console.log(withoutEmptyValues([1, null, "a", ""])); // [1, "a"]
+
 console.log(
   withoutEmptyValues({
     a: null,
@@ -29,6 +35,7 @@ console.log(
     d: []
   })
 ); // {c: { ca: [1]} }
+
 console.log(
   withoutEmptyValues({
     a: null,
