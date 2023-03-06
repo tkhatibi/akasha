@@ -2,6 +2,7 @@
   "name": "@akasha/without-empty-values",
   "version": "0.2.0",
   "description": "Helper function to return undefined instead of null, empty string, empty array or object with empty values. It also emits undefined elements from an array and does all these things recursively.",
+  "private": false,
   "keywords": [
     "helper-function",
     "utility"
