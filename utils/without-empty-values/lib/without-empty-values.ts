@@ -1,19 +1,18 @@
-export function withoutEmptyValues<T extends any>(value: T): T {
+export function withoutEmptyValues<T extends any>(value: T): T | undefined {
   if (value === undefined || value === null || value === '') {
-    return undefined as T;
+    return undefined;
   } else if (value instanceof Array) {
     const array = value.map(withoutEmptyValues).filter((e) => e !== undefined);
-    return (array.length > 0 ? array : undefined) as T;
+    return array.length > 0 ? array as T : undefined;
   } else if (typeof value === 'object') {
     const obj = Object.keys(value).reduce(
       (temp, key) => ({
         ...temp,
-        // @ts-ignore
-        [key]: withoutEmptyValues(value[key]),
+        [key]: withoutEmptyValues(value[key as keyof T]),
       }),
       {}
     );
-    return (Object.values(obj).some((e) => e !== undefined) ? obj : undefined) as T;
+    return Object.values(obj).some((e) => e !== undefined) ? obj as T : undefined;
   } else {
     return value;
   }
