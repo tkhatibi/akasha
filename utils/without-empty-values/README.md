@@ -1,19 +1,19 @@
-# `@akasha/without-empty-values`
+# `@akashalib/without-empty-values`
 
 Helper function to return undefined instead of null, empty string, empty array or object with empty values. It also emits undefined elements from an array and does all these things recursively.
 
 ## Install
 
 ```bash
-npm install @akasha/without-empty-values
+npm install @akashalib/without-empty-values
 # OR
-yarn add @akasha/without-empty-values
+yarn add @akashalib/without-empty-values
 ```
 
 ## Usage
 
 ```typescript
-import { withoutEmptyValues } from "@akasha/without-empty-values";
+import { withoutEmptyValues } from "@akashalib/without-empty-values";
 
 console.log(withoutEmptyValues(undefined)); // undefined
 
