@@ -1,11 +1,12 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "useWorkspaces": true,
-  "version": "0.2.3",
   "npmClient": "yarn",
   "command": {
     "version": {
       "conventionalCommits": true
     }
-  }
+  },
+  "version": "independent",
+  "registry": "https://registry.npmjs.org/"
 }

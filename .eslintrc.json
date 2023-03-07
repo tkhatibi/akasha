@@ -1,9 +1,16 @@
 {
+  "env": {
+    "jest": true,
+    "node": true,
+    "es2021": true,
+    "browser": true
+  },
+  "root": true,
   "ignorePatterns": [
     "**/*/.next/**/*",
     "**/*/node_modules/**/*",
     "**/*/dist/**/*",
-    "**/*/lib/**/*"
+    "**/*/coverage/**/*"
   ],
   "plugins": [
     "@nrwl/nx",
@@ -11,15 +18,17 @@
     "cypress",
     "testing-library",
     "@typescript-eslint",
+    // "@cspell",
     "prettier"
   ],
   "extends": [
     "eslint:recommended",
+    "plugin:@nrwl/nx/react",
     "plugin:@nrwl/nx/react-typescript",
     "next",
     "next/core-web-vitals",
-    "plugin:@cspell/recommended",
     "plugin:@typescript-eslint/recommended",
+    // "plugin:@cspell/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -32,13 +41,14 @@
   },
   "rules": {
     "@next/next/no-html-link-for-pages": "off",
-    "@cspell/spellchecker": [
-      "error",
-      {
-        "checkComments": true,
-        "autoFix": true
-      }
-    ],
+    // "@cspell/spellchecker": [
+    //   "error",
+    //   {
+    //     "checkComments": true,
+    //     "autoFix": true,
+    //     "customWordListFile": "./cspell-ignore-words.txt"
+    //   }
+    // ],
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/consistent-type-imports": "error",
     "prettier/prettier": [
@@ -50,7 +60,10 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     },
     "import/resolver": {
       "typescript": {
@@ -63,34 +76,55 @@
   },
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
       "rules": {
-        "@next/next/no-html-link-for-pages": ["error", "apps/*/pages"]
+        "@next/next/no-html-link-for-pages": [
+          "error",
+          "apps/*/pages"
+        ]
       }
     },
     {
-      "files": ["**/*.js?(x)"],
+      "files": [
+        "**/*.js?(x)"
+      ],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
     },
     {
-      "files": ["**/src/**/?(*.)+(stories).[jt]sx"],
-      "extends": ["plugin:storybook/recommended"]
+      "files": [
+        "**/src/**/?(*.)+(stories).[jt]sx"
+      ],
+      "extends": [
+        "plugin:storybook/recommended"
+      ]
     },
     {
       "files": [
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[jt]s?(x)"
       ],
-      "extends": ["plugin:jest/recommended", "plugin:testing-library/react"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:testing-library/react"
+      ],
       "env": {
         "jest": true
       }
     },
     {
-      "files": ["**/cypress/**/?(*.)+(cy).[jt]s?(x)"],
-      "extends": ["plugin:cypress/recommended"],
+      "files": [
+        "**/cypress/**/?(*.)+(cy).[jt]s?(x)"
+      ],
+      "extends": [
+        "plugin:cypress/recommended"
+      ],
       "parserOptions": {
         "project": "./cypress/tsconfig.json"
       },
@@ -108,7 +142,12 @@
       }
     },
     {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
       "rules": {
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
@@ -118,7 +157,9 @@
             "depConstraints": [
               {
                 "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "onlyDependOnLibsWithTags": [
+                  "*"
+                ]
               }
             ]
           }
@@ -126,13 +167,23 @@
       }
     },
     {
-      "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/typescript"
+      ],
       "rules": {}
     },
     {
-      "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/javascript"
+      ],
       "rules": {}
     }
   ]
