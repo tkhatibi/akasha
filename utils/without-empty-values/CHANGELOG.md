@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/tkhatibi/akasha/compare/v0.2.2...v0.2.3) (2023-03-07)
+
+### Bug Fixes
+
+- **utils:** types of withoutEmptyValues ([6b252ee](https://github.com/tkhatibi/akasha/commit/6b252ee8bad011650326d80aecf6d7f8c593cfe9))
+
 ## [0.2.2](https://github.com/tkhatibi/akasha/compare/v0.2.1...v0.2.2) (2023-03-07)
 
 **Note:** Version bump only for package @akashalib/without-empty-values
