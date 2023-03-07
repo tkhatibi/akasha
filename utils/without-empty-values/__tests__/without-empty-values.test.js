@@ -1,5 +1,3 @@
-"use strict";
-
 const { withoutEmptyValues } = require("../dist/without-empty-values");
 
 describe("withoutEmptyValues", () => {
