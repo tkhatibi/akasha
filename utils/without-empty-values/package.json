@@ -28,8 +28,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepublish": "lerna run build",
-    "test": "lerna run build && jest"
+    "prepublish": "lerna run build --scope @akashalib/without-empty-values",
+    "test": "lerna run build --scope @akashalib/without-empty-values && jest"
   },
   "bugs": {
     "url": "https://github.com/tkhatibi/akasha/issues"
