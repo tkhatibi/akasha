@@ -5,7 +5,10 @@
   "private": false,
   "keywords": [
     "helper-function",
-    "utility"
+    "utility",
+    "qr",
+    "qr-code",
+    "qr code"
   ],
   "author": "Touraj Khatibi <2rajpx@gmail.com>",
   "homepage": "https://github.com/tkhatibi/akasha/tree/main/utils/qrcode",
