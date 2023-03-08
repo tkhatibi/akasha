@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/tkhatibi/akasha/compare/v0.2.3...v0.3.0) (2023-03-08)
+
+
+### Bug Fixes
+
+* **utils:** version of qrcode ([cb0b2d4](https://github.com/tkhatibi/akasha/commit/cb0b2d4a8101b018a9cb7b7d742c1119b1c6335a))
+
+
+### Features
+
+* **utils:** qrcode ([22ffe5e](https://github.com/tkhatibi/akasha/commit/22ffe5edc80daaf4e90195f537f85d78ec904e5e))
+
+
+
+
+
 ## [0.2.3](https://github.com/tkhatibi/akasha/compare/v0.2.2...v0.2.3) (2023-03-07)
 
 ### Bug Fixes

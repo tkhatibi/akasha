@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/tkhatibi/akasha/compare/v0.2.3...v0.3.0) (2023-03-08)
+
+
+### Bug Fixes
+
+* **utils:** withoutEmptyValues build scope ([37a60e3](https://github.com/tkhatibi/akasha/commit/37a60e3f6c1261a0d9f98828712fda07619871f4))
+* **utils:** withoutEmptyValues lint errors ([d99a0f2](https://github.com/tkhatibi/akasha/commit/d99a0f229dfdc0038c5c86f8387ccad77cf33876))
+
+
+
+
+
 ## [0.2.3](https://github.com/tkhatibi/akasha/compare/v0.2.2...v0.2.3) (2023-03-07)
 
 ### Bug Fixes
