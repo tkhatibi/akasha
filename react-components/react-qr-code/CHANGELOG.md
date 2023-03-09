@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/tkhatibi/akasha/compare/v0.4.0...v0.5.0) (2023-03-09)
+
+
+### Features
+
+* **react-components:** react-qr-code ([7aec02d](https://github.com/tkhatibi/akasha/commit/7aec02d561b237288a52cb419cd054e3acd69838))
+
+
+
+
+
 # [0.4.0](https://github.com/tkhatibi/akasha/compare/v0.3.0...v0.4.0) (2023-03-08)
 
 
