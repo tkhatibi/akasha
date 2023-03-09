@@ -1,0 +1,47 @@
+{
+  "name": "@akashalib/react-qr-code",
+  "version": "0.4.0",
+  "description": "React component to display QR code.",
+  "private": false,
+  "keywords": [
+    "utility",
+    "qr",
+    "qr-code",
+    "react",
+    "react-component",
+    "qr-react-component"
+  ],
+  "author": "Touraj Khatibi <2rajpx@gmail.com>",
+  "homepage": "https://github.com/tkhatibi/akasha/tree/main/react-components/react-qr-code",
+  "license": "ISC",
+  "main": "dist/react-qr-code.js",
+  "types": "dist/react-qr-code.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkhatibi/akasha.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "lerna run build --scope @akashalib/react-qr-code",
+    "test": "lerna run build --scope @akashalib/qrcode && lerna run build --scope @akashalib/use-qr-code && lerna run build --scope @akashalib/react-qr-code && jest"
+  },
+  "bugs": {
+    "url": "https://github.com/tkhatibi/akasha/issues"
+  },
+  "dependencies": {
+    "@akashalib/use-qr-code": "file:../../react-hooks/use-qr-code"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}
