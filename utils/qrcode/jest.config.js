@@ -1,7 +1,7 @@
 /** @type {import('jest').Config} */
 const config = {
   // preset: "../../jest.preset.js",
-  setupFilesAfterEnv: ["../../jest-setup.react.js"],
+  // setupFilesAfterEnv: ["../../jest-setup.react.js"],
   collectCoverage: true,
   coverageDirectory: "./coverage",
   coverageThreshold: {
@@ -9,7 +9,7 @@ const config = {
       statements: 90,
     },
   },
-  testEnvironment: "jsdom",
+  // testEnvironment: "jsdom",
 };
 
 module.exports = config;
