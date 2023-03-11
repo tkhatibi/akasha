@@ -2,7 +2,7 @@ const { getJestProjects } = require("@nrwl/jest");
 
 /** @type {import('jest').Config} */
 const config = {
-  // projects: getJestProjects(),
+  projects: getJestProjects(),
   preset: "ts-jest",
   testEnvironment: "node",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],

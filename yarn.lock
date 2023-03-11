@@ -8,12 +8,12 @@
   integrity sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==
 
 "@akashalib/qrcode@file:utils/qrcode":
-  version "0.4.0"
+  version "0.6.0"
 
 "@akashalib/use-qr-code@file:react-hooks/use-qr-code":
-  version "0.4.0"
+  version "0.6.0"
   dependencies:
-    "@akashalib/qrcode" "file:../../usr/local/share/.cache/yarn/v6/npm-@akashalib-use-qr-code-0.4.0-44c1efb2-2dd0-4edf-8a2a-4b1b69ef97fe-1678360909140/node_modules/utils/qrcode"
+    "@akashalib/qrcode" "file:../../usr/local/share/.cache/yarn/v6/npm-@akashalib-use-qr-code-0.6.0-59262c99-4f0a-48cc-b15a-8d738f0d4e43-1678536951433/node_modules/utils/qrcode"
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.0"

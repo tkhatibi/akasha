@@ -2,10 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint '**/*.[tj]s?(x)'"
   },
   "workspaces": [
-    "next-api-functions/*",
     "react-components/*",
     "react-hooks/*",
     "utils/*"
